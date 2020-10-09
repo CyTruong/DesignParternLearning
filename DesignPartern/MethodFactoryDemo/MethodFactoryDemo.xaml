@@ -1,0 +1,44 @@
+﻿<Window x:Class="DesignPartern.MethodFactoryDemo.MethodFactoryDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesignPartern.MethodFactoryDemo"
+        mc:Ignorable="d"
+        Title="MethodFactoryDemo" Height="151.327" Width="322.124"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Column="0"
+      x:Name="Dictionary"
+                Click="Dictionary_Click"
+                Margin="10"
+    Style="{StaticResource MaterialDesignOutlinedButton}"
+    ToolTip="MaterialDesignOutlinedButton">
+                DICTIONARY
+            </Button>
+
+            <Button
+                Grid.Column="1"
+      x:Name="Report"
+                Click="Report_Click"
+                Margin="10"
+    Style="{StaticResource MaterialDesignOutlinedButton}"
+    ToolTip="MaterialDesignOutlinedButton">
+                REPORT
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

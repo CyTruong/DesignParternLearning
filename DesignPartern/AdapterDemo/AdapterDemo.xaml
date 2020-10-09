@@ -1,0 +1,28 @@
+﻿<Window x:Class="DesignPartern.AdapterDemo.AdapterDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesignPartern.AdapterDemo"
+        mc:Ignorable="d"
+        Title="AdapterDemo" Height="219.027" Width="537.168"
+           xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" ResizeMode="NoResize"
+        >
+    <Canvas>
+        <TextBox
+            Name="tbinput"
+  materialDesign:HintAssist.Hint="Tiếng việt"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+  VerticalAlignment="Center" Canvas.Left="10" Canvas.Top="65" Width="138" />
+        <Button x:Name="btEng" Content="Tiếng Anh" Canvas.Left="209" Canvas.Top="44" Width="129" Click="BtEng_Click"/>
+        <Button x:Name="btJap" Content="Tiếng Nhật" Canvas.Left="209" Canvas.Top="112" Width="129" Click="BtJap_Click"/>
+        <Label x:Name="label" Canvas.Left="384" Canvas.Top="44" Width="137">
+            <Label x:Name="lbEng" Content=""/>
+        </Label>
+        <Label x:Name="label_Copy" Canvas.Left="384" Canvas.Top="112" Width="137">
+            <Label x:Name="lbjap" Content=""/>
+        </Label>
+
+
+    </Canvas>
+</Window>

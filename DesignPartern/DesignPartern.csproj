@@ -89,6 +89,55 @@
     <Compile Include="AbstractFactoryDemo\ConcreteFactory.cs" />
     <Compile Include="AbstractFactoryDemo\ConcreteProduct.cs" />
     <Compile Include="AbstractFactoryDemo\AbstractFactory.cs" />
+    <Compile Include="AdapterDemo\Adaptee.cs" />
+    <Compile Include="AdapterDemo\Adapter.cs" />
+    <Compile Include="AdapterDemo\AdapterDemo.xaml.cs">
+      <DependentUpon>AdapterDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdapterDemo\Target.cs" />
+    <Compile Include="BridgeDemo\Abtraction.cs" />
+    <Compile Include="BridgeDemo\BridgeDemo.xaml.cs">
+      <DependentUpon>BridgeDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BridgeDemo\ConcreteImplementor.cs" />
+    <Compile Include="BridgeDemo\Implementor.cs" />
+    <Compile Include="BridgeDemo\RefinedAbstraction.cs" />
+    <Compile Include="BuilderDemo\AbstractBuilder.cs" />
+    <Compile Include="BuilderDemo\BuilderPatternDemo.xaml.cs">
+      <DependentUpon>BuilderPatternDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BuilderDemo\ConcreteBuilder.cs" />
+    <Compile Include="BuilderDemo\Director.cs" />
+    <Compile Include="BuilderDemo\Product.cs" />
+    <Compile Include="BuilderDemo\Result.xaml.cs">
+      <DependentUpon>Result.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CompositeDemo\CompositeDemo.xaml.cs">
+      <DependentUpon>CompositeDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DecoratorDemo\Component.cs" />
+    <Compile Include="DecoratorDemo\ConcreteDecorate.cs" />
+    <Compile Include="DecoratorDemo\Decorator.cs" />
+    <Compile Include="DecoratorDemo\DecoratorDemo.xaml.cs">
+      <DependentUpon>DecoratorDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DecoratorDemo\ConcreteComponent.cs" />
+    <Compile Include="MethodFactoryDemo\ConcreteCreator.cs" />
+    <Compile Include="MethodFactoryDemo\ConcreteProduct.cs" />
+    <Compile Include="MethodFactoryDemo\Creator.cs" />
+    <Compile Include="MethodFactoryDemo\MethodFactoryDemo.xaml.cs">
+      <DependentUpon>MethodFactoryDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MethodFactoryDemo\PageWindown.xaml.cs">
+      <DependentUpon>PageWindown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MethodFactoryDemo\Product.cs" />
+    <Compile Include="PrototypeDemo\PrototypeDemo.xaml.cs">
+      <DependentUpon>PrototypeDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrototypeDemo\PrototypeDemo2.xaml.cs">
+      <DependentUpon>PrototypeDemo2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SingletonDemo\CountWindown.xaml.cs">
       <DependentUpon>CountWindown.xaml</DependentUpon>
     </Compile>
@@ -100,6 +149,30 @@
       <DependentUpon>SingletonFrame.xaml</DependentUpon>
     </Compile>
     <Page Include="AbstractFactoryDemo\AbstractFactoryPaternDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdapterDemo\AdapterDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BridgeDemo\BridgeDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuilderDemo\BuilderPatternDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BuilderDemo\Result.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CompositeDemo\CompositeDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DecoratorDemo\DecoratorDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,6 +188,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MethodFactoryDemo\MethodFactoryDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MethodFactoryDemo\PageWindown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrototypeDemo\PrototypeDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrototypeDemo\PrototypeDemo2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResourceDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -156,9 +245,25 @@
     <None Include="Asset\AbstractFactoryPatern.pptx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Asset\Bridge.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Asset\Builder_Factory_Adapter.pptx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Asset\Composite.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Asset\Decorator.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Asset\Prototype.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Asset\singleton.pptx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="CompositeDemo\CompositeClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

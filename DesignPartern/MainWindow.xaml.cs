@@ -55,6 +55,34 @@ namespace DesignPartern
                 {
                     filename = "Asset/AbstractFactoryPatern.pptx";
                 }
+                if (item.Name.Equals("BuilderPattern"))
+                {
+                    filename = "Asset/Builder_Factory_Adapter.pptx";
+                }                
+               if (item.Name.Equals("AdapterPattern"))
+                {
+                    filename = "Asset/Builder_Factory_Adapter.pptx";
+                }
+                if (item.Name.Equals("Methodfactory"))
+                {
+                    filename = "Asset/Builder_Factory_Adapter.pptx";
+                }
+                if (item.Name.Equals("CompositePattern"))
+                {
+                    filename = "Asset/Composite.pptx";
+                }
+                if (item.Name.Equals("PrototypePattern"))
+                {
+                    filename = "Asset/Prototype.pptx";
+                }
+                if (item.Name.Equals("DecoratorPattern"))
+                {
+                    filename = "Asset/Decorator.pptx";
+                }
+                if (item.Name.Equals("BridgePattern"))
+                {
+                    filename = "Asset/Bridge.pptx";
+                }
             }
             if (!filename.Equals(""))
                 loadImagefromfilename(filename);
@@ -125,7 +153,35 @@ namespace DesignPartern
             {
                 demowindown = new AbstractFactoryDemo.AbstractFactoryPaternDemo();
             }
+            if (_currentcontent.Equals("BuilderPattern"))
+            {
+                demowindown = new BuilderDemo.BuilderPatternDemo();
+            }
+            if (_currentcontent.Equals("AdapterPattern"))
+            {
+                demowindown = new AdapterDemo.AdapterDemo() ;
+            }
+            if (_currentcontent.Equals("Methodfactory"))
+            {
+                demowindown = new MethodFactoryDemo.MethodFactoryDemo();
+            }
+            if (_currentcontent.Equals("CompositePattern"))
+            {
+                demowindown = new CompositeDemo.CompositeDemo();
+            }
+            if (_currentcontent.Equals("PrototypePattern"))
+            {
+                demowindown = new PrototypeDemo.PrototypeDemo();
+            }
+            if (_currentcontent.Equals("DecoratorPattern"))
+            {
+                demowindown = new DecoratorDemo.DecoratorDemo();
 
+            }
+            if (_currentcontent.Equals("BridgePattern"))
+            {
+                demowindown = new BridgeDemo.BridgeDemo();
+            }
             if (demowindown != null)
             {
                 demowindown.Closed += Demowindown_Closed;
@@ -138,6 +194,32 @@ namespace DesignPartern
         {
             demoBackGroud.Visibility = Visibility.Hidden;
 
+        }
+
+        private void Onkeydown(object sender, KeyEventArgs e)
+        {
+            Console.WriteLine("on keydown" + e.Key);
+            if (e.Key == Key.Right)
+            {
+                if (_currentslide == _images.Count() - 1)
+                {
+
+                }
+                else
+                    _currentslide++;
+                loadImagetoUi(_currentslide);
+            }
+            if (e.Key == Key.Left)
+            {
+                if (_currentslide == 0)
+                {
+
+                }
+                else
+                    _currentslide--;
+
+                loadImagetoUi(_currentslide);
+            }
         }
     }
 }
