@@ -122,6 +122,16 @@
       <DependentUpon>DecoratorDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="DecoratorDemo\ConcreteComponent.cs" />
+    <Compile Include="FacadeDemo\FacadeDemo.xaml.cs">
+      <DependentUpon>FacadeDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LightweightDemo\ConcreteFlyweight.cs" />
+    <Compile Include="LightweightDemo\Context.cs" />
+    <Compile Include="LightweightDemo\LightweightDemo.xaml.cs">
+      <DependentUpon>LightweightDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LightweightDemo\Flyweight.cs" />
+    <Compile Include="LightweightDemo\FlyweightFactory.cs" />
     <Compile Include="MethodFactoryDemo\ConcreteCreator.cs" />
     <Compile Include="MethodFactoryDemo\ConcreteProduct.cs" />
     <Compile Include="MethodFactoryDemo\Creator.cs" />
@@ -173,6 +183,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DecoratorDemo\DecoratorDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FacadeDemo\FacadeDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LightweightDemo\LightweightDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -255,6 +273,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Asset\Decorator.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Asset\Facade.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Asset\Flyweight.pptx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Asset\Prototype.pptx">

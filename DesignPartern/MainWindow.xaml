@@ -66,6 +66,7 @@
 
                 </Image>
                 <ListView x:Name="lvNav" Width="240" Foreground="{StaticResource NavForegroundBrush}" >
+                    
                     <ListViewItem Height="45" Padding="0" x:Name="Singleton">
                         <StackPanel Orientation="Horizontal" Margin="20,0">
                             <materialDesign:PackIcon Kind="Creation" Width="20" Height="20" Foreground="Gray" VerticalAlignment="Center" />
@@ -119,6 +120,18 @@
                         <StackPanel Orientation="Horizontal" Margin="20,0">
                             <materialDesign:PackIcon Kind="ToyBrick" Width="20" Height="20" Foreground="Gray" VerticalAlignment="Center" />
                             <TextBlock Text="Bridge Pattern"></TextBlock>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="45" Padding="0" x:Name="FlyweightPattern">
+                        <StackPanel Orientation="Horizontal" Margin="20,0">
+                            <materialDesign:PackIcon Kind="ToyBrick" Width="20" Height="20" Foreground="Gray" VerticalAlignment="Center" />
+                            <TextBlock Text="Flyweigh Pattern"></TextBlock>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="45" Padding="0" x:Name="FacadePattern">
+                        <StackPanel Orientation="Horizontal" Margin="20,0">
+                            <materialDesign:PackIcon Kind="ToyBrick" Width="20" Height="20" Foreground="Gray" VerticalAlignment="Center" />
+                            <TextBlock Text="Facade Pattern"></TextBlock>
                         </StackPanel>
                     </ListViewItem>
                     <ListView.ItemContainerStyle>

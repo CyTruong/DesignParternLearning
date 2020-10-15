@@ -83,6 +83,14 @@ namespace DesignPartern
                 {
                     filename = "Asset/Bridge.pptx";
                 }
+                if (item.Name.Equals("FacadePattern"))
+                {
+                    filename = "Asset/Facade.pptx";
+                }
+                if (item.Name.Equals("FlyweightPattern"))
+                {
+                    filename = "Asset/Flyweight.pptx";
+                }
             }
             if (!filename.Equals(""))
                 loadImagefromfilename(filename);
@@ -181,6 +189,15 @@ namespace DesignPartern
             if (_currentcontent.Equals("BridgePattern"))
             {
                 demowindown = new BridgeDemo.BridgeDemo();
+            }
+            if (_currentcontent.Equals("FacadePattern"))
+            {
+                demowindown = new FacadeDemo.FacadeDemo();
+
+            }
+            if (_currentcontent.Equals("FlyweightPattern"))
+            {
+                demowindown = new LightweightDemo.LightweightDemo();
             }
             if (demowindown != null)
             {
