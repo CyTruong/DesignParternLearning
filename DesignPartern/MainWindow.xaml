@@ -134,6 +134,18 @@
                             <TextBlock Text="Facade Pattern"></TextBlock>
                         </StackPanel>
                     </ListViewItem>
+                    <ListViewItem Height="45" Padding="0" x:Name="StrategyPattern">
+                        <StackPanel Orientation="Horizontal" Margin="20,0">
+                            <materialDesign:PackIcon Kind="Function" Width="20" Height="20" Foreground="Gray" VerticalAlignment="Center" />
+                            <TextBlock Text="Strategy Pattern"></TextBlock>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem Height="45" Padding="0" x:Name="StatePattern">
+                        <StackPanel Orientation="Horizontal" Margin="20,0">
+                            <materialDesign:PackIcon Kind="Function" Width="20" Height="20" Foreground="Gray" VerticalAlignment="Center" />
+                            <TextBlock Text="Facade Pattern"></TextBlock>
+                        </StackPanel>
+                    </ListViewItem>
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <EventSetter Event="PreviewMouseLeftButtonDown" Handler="ListViewItem_PreviewMouseLeftButtonDown" />

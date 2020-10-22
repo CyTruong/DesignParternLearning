@@ -91,6 +91,14 @@ namespace DesignPartern
                 {
                     filename = "Asset/Flyweight.pptx";
                 }
+                if (item.Name.Equals("StrategyPattern"))
+                {
+                    filename = "Asset/Strategy.pptx";
+                }
+                if (item.Name.Equals("StatePattern"))
+                {
+                    filename = "Asset/State.pptx";
+                }
             }
             if (!filename.Equals(""))
                 loadImagefromfilename(filename);
@@ -198,6 +206,14 @@ namespace DesignPartern
             if (_currentcontent.Equals("FlyweightPattern"))
             {
                 demowindown = new LightweightDemo.LightweightDemo();
+            }
+            if (_currentcontent.Equals("StrategyPattern"))
+            {
+                demowindown = new StrategyDemo.StrategyDemo();
+            }
+            if (_currentcontent.Equals("StatePattern"))
+            {
+                demowindown = new StateDemo.StateDemo();
             }
             if (demowindown != null)
             {
